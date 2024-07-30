@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History - Lifestyle Rewards Digital Wallet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr td:nth-child(3) {
+            text-align: right;
+            color: green;
+        }
+
+        tr td:nth-child(3):not(:first-child) {
+            color: red;
+        }
+
+        tr td:nth-child(4) {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        h2 {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cute Onesies</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="rewards.html">Rewards</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="transaction_history.html">Transaction History</a></li>
+                <li><a href="loyalty_dashboard.html">Loyalty Dashboard</a></li>
+                <li><a href="shopping.html">Shopping</a></li>
+                <li><a href="login.html">Login/Sign Up</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="transaction-history">
+            <h2>Points Transaction History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Points</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01-07-2024</td>
+                        <td>Initial Points</td>
+                        <td>+1000</td>
+                        <td>1000</td>
+                    </tr>
+                    <tr>
+                        <td>02-07-2024</td>
+                        <td>Bought Stitch Onesie</td>
+                        <td>+100</td>
+                        <td>1100</td>
+                    </tr>
+                    <tr>
+                        <td>05-07-2024</td>
+                        <td>Redeem Points</td>
+                        <td>-200</td>
+                        <td>900</td>
+                    </tr>
+                    <tr>
+                        <td>06-07-2024</td>
+                        <td>Bought Full Brown Onesie</td>
+                        <td>+150</td>
+                        <td>1050</td>
+                    </tr>
+                    <tr>
+                        <td>10-07-2024</td>
+                        <td>Referral Bonus</td>
+                        <td>+150</td>
+                        <td>1200</td>
+                    </tr>
+                    <tr>
+                        <td>12-07-2024</td>
+                        <td>Bought Alien Onesie</td>
+                        <td>+250</td>
+                        <td>1450</td>
+                    </tr>
+                    <tr>
+                        <td>23-07-2024</td>
+                        <td>Bought Stitch Onesie</td>
+                        <td>+100</td>
+                        <td>1550</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="purchase-history">
+            <h2>Purchase History</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Item</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>02-07-2024</td>
+                        <td>Stitch Onesie</td>
+                        <td>$10</td>
+                    </tr>
+                    <tr>
+                        <td>06-07-2024</td>
+                        <td>Full Brown Onesie</td>
+                        <td>$15</td>
+                    </tr>
+                    <tr>
+                        <td>12-07-2024</td>
+                        <td>Alien Onesie</td>
+                        <td>$25</td>
+                    </tr>
+                    <tr>
+                        <td>23-07-2024</td>
+                        <td>Stitch Onesie</td>
+                        <td>$10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>

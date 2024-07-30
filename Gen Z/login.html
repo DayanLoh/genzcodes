@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign Up - Lifestyle Rewards Digital Wallet</title>
+    <style>
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, rgb(8, 255, 197), rgb(0, 0, 34));
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Home section */
+        #home {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #home h2 {
+            color: #007bff;
+        }
+
+        #home p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .reward-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Login/Sign Up section */
+        #login {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        #login h2 {
+            color: black;
+        }
+
+        #login form {
+            display: inline-block;
+            text-align: left;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        #login form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        #login form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #login form button {
+            width: 106%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 20px;
+        }
+
+        #login form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cute Onesies</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="rewards.html">Rewards</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="transaction_history.html">Transaction History</a></li>
+                <li><a href="loyalty_dashboard.html">Loyalty Dashboard</a></li>
+                <li><a href="shopping.html">Shopping</a></li>
+                <li><a href="login.html">Login/Sign Up</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section id="login">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="nric">NRIC:</label>
+            <input type="text" id="nric" name="nric" required>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <label for="new-nric">NRIC:</label>
+            <input type="text" id="new-nric" name="new-nric" required>
+            <label for="new-username">Username:</label>
+            <input type="text" id="new-username" name="new-username" required>
+            <label for="new-password">Password:</label>
+            <input type="password" id="new-password" name="new-password" required>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Validate the form (additional validation can be added here)
+            const nric = document.getElementById('nric').value;
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            if (nric && username && password) {
+                // Redirect to home page after login
+                window.location.href = 'home.html';
+            }
+        });
+
+        document.getElementById('signup-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Validate the form (additional validation can be added here)
+            const newNric = document.getElementById('new-nric').value;
+            const newUsername = document.getElementById('new-username').value;
+            const newPassword = document.getElementById('new-password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            if (newNric && newUsername && newPassword && confirmPassword && newPassword === confirmPassword) {
+                // Redirect to home page after sign up
+                window.location.href = 'home.html';
+            } else {
+                alert('Passwords do not match');
+            }
+        });
+    </script>
+</body>
+</html>

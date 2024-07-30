@@ -1,0 +1,75 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Item Page</title> 
+    <style> 
+        body{
+            background: radial-gradient(circle, rgb(8, 255, 197), rgb(0, 0, 34));
+        }
+        .container { 
+            max-width: 600px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            text-align: center; 
+            border: 1px solid #ddd; 
+            border-radius: 10px; 
+            box-shadow: 0 0 10px rgba(0,0,0,1);
+            background-color: white;
+        } 
+        .item-image { 
+            max-width: 100%; 
+            height: auto; 
+            border-radius: 10px; 
+        } 
+        .item-description { 
+            margin: 20px 0; 
+            font-size: 18px; 
+            line-height: 1.5; 
+        } 
+        .checkout-button { 
+            display: inline-block; 
+            padding: 10px 20px; 
+            font-size: 18px; 
+            color: #fff; 
+            background-color: blue; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            text-decoration: none;
+        } 
+        .checkout-button:hover { 
+            background-color: rgb(0, 136, 255); 
+        }
+
+        .back {
+            position: absolute;
+            font-size: 50px;
+            top:5px;
+            cursor: pointer;
+        }
+    </style> 
+</head> 
+<body> 
+    <div class="container">
+        <div class="back" onclick="location.href='shopping.html'">&times;</div> 
+        <img src="img/blue.jpg" alt="Item Image" class="item-image"> 
+        <div class="item-description"> 
+            <h2>Stitch onesie</h2>
+            <p><b>$10.00</b></p>
+            <h5>+ $5.00 delivery fee</h5> 
+            <p>100% comfortable clothing.</p>
+        </div> 
+        <a href="home.html" class="checkout-button" onclick="checkout()">Checkout</a>
+        <a href="home.html" class="checkout-button" onclick="checkout()" style="background-color: black;">ApplePay</a>
+        <a class="checkout-button" onclick="location.href='scanqr2.html'" style="background-color: purple;">scan qr</a>  
+    </div> 
+    <script> 
+        var msg = "Checkout Succesful" 
+        function checkout() { 
+            document.getElementById("item").innerHTML = alert(msg) 
+        } 
+    </script> 
+</body> 
+</html>

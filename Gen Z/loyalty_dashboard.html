@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyalty Dashboard - Lifestyle Rewards Digital Wallet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: radial-gradient(circle, rgb(8, 255, 197), rgb(0, 0, 34));
+
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        #balance {
+            text-align: center;
+            margin: 20px;
+            font-size: 24px;
+            color: black;
+        }
+
+        #loyalty {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        #loyalty h2 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .rewards-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .reward {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .red {
+            color: red;
+        }
+
+        .black {
+            color: black;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .celebration {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+
+        .next-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .next-button:hover {
+            background-color: #0056b3;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cute Onesies</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="rewards.html">Rewards</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="transaction_history.html">Transaction History</a></li>
+                <li><a href="loyalty_dashboard.html">Loyalty Dashboard</a></li>
+                <li><a href="shopping.html">Shopping</a></li>
+                <li><a href="login.html">Login/Sign Up</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div id="balance">
+        Total Balance: <span id="totalPoints" class="black">1450</span> points
+    </div>
+<section id="loyalty">
+        <h2>Loyalty Dashboard</h2>
+        <div class="rewards-list">
+            <div class="reward">
+                <p>Next Reward: Free Stich Onesie at <span class="black">1400</span> points</p>
+                <p id="stichRewardStatement" class="green">Congratulations! You are eligible to redeem a free Stich Onesie with your current points!</p>
+            </div>
+            <div class="reward">
+                <p>Next Reward: 15% discount on the next onesies purchase at <span class="black">1450</span> points</p>
+                <p id="celebrationMessage" class="green">Congratulations! You've unlocked a reward. Enjoy your 15% discount on the next onesies purchase!</p>
+            </div>
+            <div class="reward">
+                <p>Upcoming Reward: Membership card at <span class="red">5000</span> points</p>
+                <p class="red">Insufficient points for this reward.</p>
+            </div>
+        </div>
+        <button id="nextButton" class="next-button">Next</button>
+    </section>
+</body>
+</html>

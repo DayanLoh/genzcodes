@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Lifestyle Rewards Digital Wallet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        background: radial-gradient(circle, rgb(8, 255, 197), rgb(0, 0, 34));
+    }
+    header {
+        background-color: black;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    #profile p,
+    #profile h2,
+    #profile h3 {
+        color: white;
+        text-align: center;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    img {
+        border: 2px solid black;
+        border-radius: 8px;
+        width: 200px;
+        height: auto;
+        margin-left: 640px;
+    }
+
+    .editbutton {
+        background-color: blue;
+        color: black;
+        padding: 10px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Cute Onesies</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="rewards.html">Rewards</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="transaction_history.html">Transaction History</a></li>
+                <li><a href="loyalty_dashboard.html">Loyalty Dashboard</a></li>
+                <li><a href="shopping.html">Shopping</a></li>
+                <li><a href="login.html">Login/Sign Up</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section id="profile">
+        <h2>User Profile</h2>
+        <img src="img/women.png" alt="User Profile Picture">
+        <p>Name: Jane Doe</p>
+        <p>Gender: Female</p>
+        <p>Birthday: 1 April 2006</p>
+        <p>Email: jane.doe@example.com</p>
+        <p>Contact Number: 82776365</p>
+        <h3>Bank Details</h3>
+        <p>Name on card: Jane Doe</p>
+        <p>Card Number: 4060 6860 1171 2172</p>
+        <p>MM/YY: 03/17</p>
+        <p>CVV: 388</p>
+        <p><a href="editprofile.html" class="editbutton">Edit Profile</a></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
